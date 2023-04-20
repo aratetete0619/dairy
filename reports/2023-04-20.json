@@ -1,9 +1,10 @@
 {
-  "goal": "",
-  "learning_hours": "",
-  "reflection": "",
-  "blocker": "",
-  "learning": "",
-  "impression": "",
+  "goal": " blog完成",
+  "learning_hours": " 3 hours",
+  "reflection": " - かなり軽い感じでblogを作成。
+ - rubocopのドキュメントとコードをざっくり拝見",
+  "blocker": " open aiのapiを使うか、またモデルの選定。",
+  "learning": " 大きな学びはあまりなかった",
+  "impression": " コマンド作りがとても楽しい",
   "tomorrow_goal": ""
 }
