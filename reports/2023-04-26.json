@@ -1,0 +1,11 @@
+{
+  "goal": "- オブジェクト指向本を読み進める
+- Questを勧める",
+  "learning_hours": "",
+  "reflection": "- Gitのクエスト終了
+- Linux環境構築のためにUSBをポチる",
+  "blocker": "USBが届くのを待つ",
+  "learning": "GitがcommitされるとSHA1などのハッシュ関数を用いて変換される固定長の数値が、ひとつのコミットごとに付属している謎の暗号であることを知りました。",
+  "impression": "オブジェクト指向本が全然進みません",
+  "tomorrow_goal": "- オブジェクト指向本を読み進める- Questを勧める"
+}
