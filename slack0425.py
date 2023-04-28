@@ -4,8 +4,8 @@ import datetime
 import os
 
 # Slack Webhook URL
-SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
-WAKATIME_API_KEY = "waka_10997b33-3b1e-46ab-9275-51ead8efd29b"
+SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+WAKATIME_API_KEY = "waka_618c58f7-909b-4928-8095-607fbcf47b3a"
 
 # Slackメッセージを作成する関数
 
@@ -71,11 +71,17 @@ wakatime_data = get_wakatime_data(specific_date)["data"][0]
 
 
 # 学習時間を表示するテキスト
-learning_hours_text = (
-    f"{wakatime_data['grand_total']['text']} (WakaTime)"
-    if not report["learning_hours"]
-    else f"{wakatime_data['grand_total']['text']} (WakaTime) / {report['learning_hours']} hours (Manual)"
-)
+if "learning_hours" in report:
+    learning_hours_text = (
+        f"{wakatime_data['grand_total']['text']} (WakaTime)"
+        if not report["learning_hours"]
+        else f"{wakatime_data['grand_total']['text']} (WakaTime) / {report['learning_hours']} hours (Manual)"
+    )
+else:
+    learning_hours_text = f"{wakatime_data['grand_total']['text']} (WakaTime)"
+
+# 日報に学習時間を追加する
+report["learning_hours"] = wakatime_data['grand_total']['hours']
 
 
 # Slackに通知を送信する
