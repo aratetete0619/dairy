@@ -5,7 +5,7 @@ import os
 
 # Slack Webhook URL
 SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
-WAKATIME_API_KEY = "waka_618c58f7-909b-4928-8095-607fbcf47b3a"
+WAKATIME_API_KEY = "waka_6ea5f9dd-d4a2-407a-bd0c-f5ad9ffd0c43"
 
 # Slackメッセージを作成する関数
 
